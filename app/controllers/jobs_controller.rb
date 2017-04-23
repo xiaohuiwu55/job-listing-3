@@ -1,5 +1,5 @@
 class JobsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy, :search]
 
   def show
     @job = Job.find(params[:id])
@@ -45,6 +45,11 @@ class JobsController < ApplicationController
     @job.destroy
     redirect_to jobs_path
   end
+
+  
+
+
+
   private
   def job_params
     params.require(:job).permit(:title, :description, :wage_upper_bound, :wage_lower_bound, :contact_email, :is_hidden)

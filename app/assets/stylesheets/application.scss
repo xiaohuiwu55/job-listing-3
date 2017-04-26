@@ -22,7 +22,7 @@
 //---------Navbar---------
 
 .navbar-default {
-    background-color: #212121;
+    background-color: #233140;
     border-color: #212121;
     border-radius: 0;
 }
@@ -96,6 +96,7 @@
     }
 
     .title {
+        color: #e96c00;
         text-align: center;
         font-family: "微軟正黑體", PT Mono;
         font-size: 5.5em;
@@ -103,7 +104,7 @@
     }
 
     .slogan {
-        color: #1E88E5;
+        color: #090909;
         margin-top: 10px;
         margin-bottom: 50px;
         text-align: center;
@@ -155,8 +156,9 @@ footer {
 }
 
 footer .footer-below {
-    padding: 25px 0;
+    padding: 20px 0;
     background-color: #233140;
+    line-height: 10px;
 }
 
 .custab{
